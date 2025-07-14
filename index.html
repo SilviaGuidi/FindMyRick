@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find my Rick</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1d1f2f, #292b40);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #00ffea;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 15px 30px;
+      background-color: #00c2ff;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #00ffea;
+      box-shadow: 0 4px 25px rgba(0, 255, 255, 0.6);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; padding-top:50px">
-  <h1>Clicca per trovare Rick!</h1>
+<body>
+  <h1>Stana quel maledetto!</h1>
   <button onclick="goRandom()">Stanalo</button>
 
   <script>
