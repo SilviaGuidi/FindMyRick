@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find my Rick</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; padding-top:50px">
+  <h1>Scopri un posto a caso nel mondo!</h1>
+  <button onclick="goRandom()">Vai!</button>
+
+  <script>
+    function goRandom() {
+      const lat = (Math.random() * 180 - 90).toFixed(6);
+      const lon = (Math.random() * 360 - 180).toFixed(6);
+      const url = `https://www.google.com/maps?q=${lat},${lon}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
